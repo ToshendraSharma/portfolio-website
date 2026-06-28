@@ -758,13 +758,21 @@ section,
 .hero .hero-image .image-wrapper {
   position: relative;
   max-width: 500px;
+  max-height: 550px;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .hero .hero-image .image-wrapper .main-image {
   border-radius: 12px;
   box-shadow: 0 20px 60px color-mix(in srgb, var(--heading-color), transparent 85%);
   transition: transform 0.3s ease;
+  width: 100%;
+  height: 550px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f0f4f7;
 }
 
 .hero .hero-image .image-wrapper .main-image:hover {
@@ -897,12 +905,15 @@ section,
 
 .about .profile-section .profile-image-container img {
   width: 100%;
-  max-width: 300px;
-  aspect-ratio: 1;
+  max-width: 280px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: top center;
   border-radius: 12px;
   filter: grayscale(20%);
   transition: filter 0.3s ease;
+  margin: 0 auto;
+  display: block;
 }
 
 .about .profile-section .profile-image-container img:hover {
