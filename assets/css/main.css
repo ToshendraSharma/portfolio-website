@@ -886,6 +886,8 @@ section,
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
   color: var(--heading-color);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .about .intro-header .subtitle {
@@ -1164,6 +1166,16 @@ section,
   .about .bottom-section .action-buttons .btn-custom {
     text-align: center;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about .intro-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .about .intro-header .subtitle {
+    font-size: 0.95rem;
   }
 }
 
